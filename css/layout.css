@@ -1,0 +1,78 @@
+body {
+    text-align: center;
+    margin-right: 30;
+    margin-top: 30;
+    margin-bottom: 30;
+    margin-left: 30;
+    padding 0;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 15% auto auto;
+    grid-template-rows: 1f 1f 1f;
+    grid-gap: none;
+    grid-template-areas: "header header header"
+                         "Navigation article Content"
+                         "footer footer footer";
+                         
+  }
+  
+  aside
+   
+  {
+    padding: 0;
+    border: none;
+    outline :black solid 2px;
+    background: lightskyblue;
+  }
+
+   article
+   
+  {
+    padding: 0;
+    border: none;
+    outline: black solid 2px;
+    grid-column: 2 / 3;
+    
+  }
+  
+  header {
+    height: 120px;
+    grid-area: header;
+    background: lightseagreen;
+    font-size: large;
+    outline:black solid 2px;
+        
+  }
+  
+  footer {
+    
+    height: 120px; 
+    grid-area: footer;
+    background: lightgrey;
+    font-size: large;
+    outline: black solid 2px;
+    clear: both;
+  }
+  
+  .Navigation {
+    height: 400px;
+    grid-area: Navigation;
+    background: fuchsia;
+    font-size: large;
+    outline: black solid 2px;
+  }
+  
+  .Content {
+    grid-area: Content;
+    background: rgb(49, 52, 223));
+    font-size: large;
+    outline: black solid 2px;
+    
+  }
+
+
+ 
+
+
